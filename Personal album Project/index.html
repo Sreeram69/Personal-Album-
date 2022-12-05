@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>A Trip Around the Sun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="logo12.png" alt=""> </a>
+        <ul class="nav-menu">
+          <li> <a href="#about" class="nav-link">Home</a> </li>
+          <li> <a href="#Our Categorys" class="nav-link">Our Categorys</a> </li>
+          <li> <a href="#Ouralbum" class="nav-link">Our Album</a> </li>
+          <li> <a href="contact.html" class="nav-link">Contact</a> </li>
+          <li> <a href="Login.html" class="nav-link">Account</a> </li>
+        </ul>
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+    hambuger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1><b>Trip.Around.The.Sun</b></h1>
+      
+<p > <em>“Photography is about capturing moments you’ll want to remember forever”</em></p>
+<p> <em>“Your love stories told through our lens… with heart and soul!”</em></p>
+<p> <em>“There are no bad photographs, only less interesting ones.”</em></p>
+<br>
+<button><i>MORE INFO</i></button>
+<br>
+<br>
+      </div>
+      <div class="image">
+        <img src="main6.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="main2.jpg" alt="" class="slide active" onclick="img('main2.jpg')">
+        <img src="love1.jpg" alt="" class="slide" onclick="img('love1.jpg')">
+        <img src="main5.png" alt="" class="slide" onclick="img('main5.png')">
+        <img src="home44.jpg" alt="" class="slide" onclick="img('home44.jpg')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="main2 - Copy.jpg" alt="" class="image1">
+          <img src="main11.jpg" alt="" class="image2">
+          <img src="main11.jpg" alt="" class="image2">
+          <img src="main11.jpg" alt="" class="image2">
+          <img src="main11.jpg" alt="" class="image2">
+          <img src="main11.jpg" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>LOOKING BACK ON LOVE</h5>
+          <h2>Welcome To Over Personal Photo Album</h2>
+          <p>Don't allow the best and most incredible moments of your life vanish into a digital screen. Bring your really unique memories to life with touch and sensation, and that too at an affordable photo album price</p>
+          <p> Make your unforgettable moments last a bit longer. If you go to a local photo album book manufacturer, the job will be time-consuming and unreliable. Instead, go for a better, simpler, and faster choice. Picsy Photo Albums allow you to print and save your life's most beautiful moments.</p>
+          <button class="btn1"><em>READ MORE</em></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="Our Categorys">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>OUR BEST TIME TOGETHER</h5>
+          <h2>Our Categorys.. </h2>
+        </div>
+        <div class="button">
+          <button class="btn1"><em>VIEW ALL</em></button>
+        </div>
+      </div>
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="main2 - Copy.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3> <b> Love Gallery </b></h3>
+            <p> </p>
+            <br>
+            <button class="btn1">SHOW MORE</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="main14.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3> <b>Nature Gallery</b> </h3>
+            <p> </p>
+            <br>
+            <button class="btn1">SHOW MORE</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="main9.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3> <b>Tourist Gallery</b>T</h3>
+            <p></p>
+            <br>
+            <button class="btn1">SHOW MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallary mtop " id="Ouralbum">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW GALLERY</button>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="home11.jpeg" alt="">
+        </div>
+        <div class="item">
+          <img src="main1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="home44.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main5.png" alt="">
+        </div>
+        <div class="item">
+          <img src="love1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="love2.png" alt="">
+        </div>
+        <div class="item">
+          <img src="main4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main8.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main9.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="w1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main10.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main11.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="main12.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="love1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="a1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="a2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="ami.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="love3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+<br>
+<br>
+
+</body>
+</html>
